@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Sign Up | Hobbylibi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Style CSS -->
+    <link href="assets/modals.css" rel="stylesheet">
+  </head>
+  <body class="bg-primary">
+    <div class="modal modal-signup position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignup">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <!-- Title -->
+              <h2 class="fw-bold mb-0">Sign Up</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>  
+            <div class="modal-body p-4 pt-4">
+                <!-- Sign up -->
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-4" id="name" name="name" placeholder="Full name">
+                  <label for="floatingInput">Full name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-4" id="email" name="email" placeholder="Enter email">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating row">
+                    <div class="form-floating col sm-6 mb-3">
+                      <input type="password" class="form-control rounded-4" id="password1" name="password1" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="form-floating col sm-6">
+                      <input type="password" class="form-control rounded-4" id="password2" name="password2" placeholder="Confirm password">
+                      <label for="floatingPassword">Confirm password</label>
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="agree" name="agree">
+                    <label class="form-check-label" for="agree"><small class="text-muted">I agree to <a href="../about/term.html">The Terms</a> and <a href="privacy.html">Privacy Policy</a></small></label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+                <small>Already have an account?<a href="signin.html">Sign in</a></small>
+              </form>
+              <!-- End sign up -->
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>      
+  </body>
+  </html>

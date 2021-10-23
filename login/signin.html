@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Forgot Password | Hobbylibi</title>
+    <title>Sign In | Hobbylibi</title>
 
     <!-- Bootstrap CSS -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -19,21 +19,30 @@
             <div class="modal-header p-5 pb-4 border-bottom-0">
 
               <!-- Title -->
-              <h2 class="fw-bold mb-0">Recovery Account</h2>
+              <h2 class="fw-bold mb-0">Sign In</h2>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body p-4 pt-4">
-                <!-- Forgot -->
+                <!-- Sign in -->
               <form>
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control rounded-4" id="email" name="email" placeholder="Enter email">
                   <label for="floatingInput">Email address</label>
                 </div>
-                <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Submit</button>
-                <small>Already have an account?<a href="signin.html">Sign in!</a></small>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-4" id="password1" name="password1" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <a href="forgot.html"><small>Forgot your password?</small></a>
+                    </div>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign in</button>
+                <small>New member?<a href="signup.html">Create account</a></small>
               </form>
-              <!-- End forgot -->
+              <!-- End sign in -->
             </div>
           </div>
         </div>
